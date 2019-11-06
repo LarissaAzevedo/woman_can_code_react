@@ -6,3 +6,8 @@ git commit -m
 git push -u origin master
 git push
 git pull origin master
+
+touch index.html = cria o arquivo na pasta
+
+git log = mostra o histórico dos commits
+ls = mostra os arquivos existentes no diretório
