@@ -11,10 +11,22 @@
     <div id="div_id" class="first_div"></div>
     <!-- <marquee behavior="slide" direction=""><p>Eae</p></marquee> -->
     <!-- 
+        Adiciona um elemento em determinado posicionamento
         document.getElementById('div_id').insertAdjacentHTML("afterbegin", "<p>My After Begin</p>");
         document.getElementById('div_id').insertAdjacentHTML("afterend", "<p>My After End</p>");
         document.getElementById('div_id').insertAdjacentHTML("beforebegin", "<p>My Before Begin</p>");
         document.getElementById('div_id').insertAdjacentHTML("beforeend", "<p>My Before End</p>");
+
+        Adiciona/Remove um elemento
+        document.getElementById('div_id').classList.add('second_div');
+        document.getElementById('div_id').classList.remove('second_div');
+
+        Define um tempo para chamar determinada função
+        setTimeout(function(){ alert("Hello");}, 3000);
+
+        Define um intervalo de tempo para acontecer
+        setInterval(function(){ alert("Hello");}, 3000);
+
 -->
 </body>
 
