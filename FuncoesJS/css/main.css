@@ -1,0 +1,56 @@
+h1 {
+  font-size: 3vw;
+}
+
+.first_div {
+  width: 100%;
+  height: 70vw;
+  background-color: #f0f;
+  transition-duration: 500ms;
+}
+
+.div_effect {
+  height: 30vw;
+  transition-duration: 500ms;
+}
+
+.btn_container {
+  margin-top: 1vw;
+  display: flex;
+}
+
+.btn {
+  width: 10vw;
+  text-align: center;
+  padding: 1.5vw 0;
+  margin-left: .5vw;
+}
+
+.link {
+  margin-left: .5vw;
+  font-size: 1.5vw;
+}
+
+#btn_click {
+  background-color: #f00;
+  color: #fff;
+  font-size: 2vw;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#btn_onmouseover {
+  background-color: #0ff;
+  color: #000;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+#btn_onmouseout {
+  background-color: #ff0;
+  color: #000;
+  font-size: 1.5vw;
+  font-weight: bolder;
+  cursor: pointer;
+}
