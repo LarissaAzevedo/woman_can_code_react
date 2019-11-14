@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    color: white;
+    width: 89vw;
+    padding: 2vw;
+    position: fixed;
+    transition: 800ms;
+    text-transform: uppercase;
+}
+.banner{
+    background-image: url(../img/cat.jfif);
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_baixo{
+    height: 1200px;
+}
+#botao{
+    text-align: center;
+    border: 2px solid white;
+    padding: 4vw;
+    transition: 300ms;
+}
+#botao p{
+    font-size: 2.5vw;
+    color: white;
+    font-size: 5vw;
+}
+.modal{
+    display: none;
+}
+/* efeitos com javascript */
+/* header */
+.menupreto{
+    background-color: black;
+    transition: 800ms;
+    color: white;
+}
+/* botão */
+.botao_hover{
+    background-color: white;
+    color: red;
+    border: solid 1px black;
+    transition: 300ms;
+}
+
+/* modal */
+.modalOn{
+    display: inline;
+    border: solid 6px red;
+    width: 30vw;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    transition: 300ms;
+}
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 3 - Javascript</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header" id="header" onscroll="MudaMenu()">
+            <nav>
+                <h1>menu de navegação</h1>
+            </nav>
+        </div>
+    </header>
+    <section class="banner">
+        <div id="botao" onmouseover="btnMuda()" onmouseout="btnVolta()" onclick="clique(event)">
+            <p>Abrir modal</p>
+        </div>
+    </section>
+    <div id="modal" class="modal">
+        <p>Clique fora para fechar o modal</p>
+    </div>
+    <div class="div_baixo"></div>
+
+</body>
+<script src="../js/javascript.js"></script>
+
+</html>
