@@ -12,18 +12,24 @@
     <header>
         <div class="header" id="header" onscroll="MudaMenu()">
             <nav>
-                <h1>menu de navegação</h1>
+                <h1>Menu de navegação</h1>
             </nav>
         </div>
     </header>
+    <div id="container"></div>
     <section class="banner">
-        <div id="botao" onmouseover="btnMuda()" onmouseout="btnVolta()" onclick="clique(event)">
-            <p>Abrir modal</p>
+        <div id="container">
+
+            <button id="botao" onmouseover="btnMuda()" onmouseout="btnVolta()" onclick="clique(event)" class="teste">
+                Abrir modal
+            </button>
+
+            <div id="modal" class="modal">
+                <p>Clique fora para fechar o modal</p>
+            </div>
         </div>
     </section>
-    <div id="modal" class="modal">
-        <p>Clique fora para fechar o modal</p>
-    </div>
+
     <div class="div_baixo"></div>
 
 </body>

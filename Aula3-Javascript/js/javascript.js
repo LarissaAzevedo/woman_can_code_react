@@ -1,38 +1,49 @@
+//definição de variáveis
+cHeader = document.getElementById("header")
+cModal = document.getElementById("modal")
+cBotao = document.getElementById("botao")
+cContainer = document.getElementById("container")
+
 //animação do header
 window.onscroll = function () { scrollWindow() }
 function scrollWindow() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("header").classList.add('menupreto')
+        cHeader.classList.add('menupreto')
     } else {
-        document.getElementById("header").classList.remove('menupreto')
+        cHeader.classList.remove('menupreto')
     }
 }
 
 //animação do botão - hover
 function btnMuda() {
-    document.getElementById("botao").classList.add('botao_hover')
-    // document.getElementById("botao").classList.add('link_hover')
+    cBotao.classList.add('botao_hover')
 }
 function btnVolta() {
-    document.getElementById("botao").classList.remove('botao_hover')
-    // document.getElementById("botao").classList.remove('link_hover')
+    cBotao.classList.remove('botao_hover')
 }
 
 // chama o modal
 function clique(event){
-    document.getElementById("modal").classList.add('modalOn')
-    document.getElementById("modal").classList.add('animated','bounceInDown')
+    cModal.classList.add('modalOn')
+    cModal.classList.add('animated','bounceInDown')
+    cContainer.classList.add('container')
+    cBotao.classList.add('btnOff')
     event.stopPropagation()
 }
 
 //clique fora do modal para ele sumir
-window.onclick = function(){
-    this.cliqueFora()
+window.onclick = function(event){
+    this.cliqueFora(event)
 }
 function cliqueFora(event){
-    document.getElementById("modal").classList.add('animated','bounceInDown')
-    document.getElementById("modal").classList.remove('modalOn')
+    cModal.classList.add('animated','bounceOutDown')
+    cContainer.classList.remove('container')
     event.stopPropagation();
+
+    setTimeout(() => {
+        cBotao.classList.remove('btnOff')
+        cModal.classList.remove('modalOn')
+    }, 1000);
 }
 
 
