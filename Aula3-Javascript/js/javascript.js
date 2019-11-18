@@ -41,6 +41,7 @@ function cliqueFora(event){
     event.stopPropagation();
 
     setTimeout(() => {
+        cModal.classList.remove('animated','bounceOutDown')
         cBotao.classList.remove('btnOff')
         cModal.classList.remove('modalOn')
     }, 1000);
