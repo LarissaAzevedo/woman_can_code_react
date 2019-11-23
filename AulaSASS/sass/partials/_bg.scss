@@ -5,4 +5,8 @@
     height: 100%;
     position: absolute;
     z-index: -1;
+
+    @include desktop{
+        clip-path: polygon(0 0, 70% 0, 43% 100%, 0% 100%);
     }
+}

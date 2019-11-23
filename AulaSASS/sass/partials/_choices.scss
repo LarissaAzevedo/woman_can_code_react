@@ -1,0 +1,54 @@
+section#choices {
+
+    @include desktop{
+        width: 40%;
+        height: fit-content;
+        order: 2;
+        margin: $base-margin * 5;
+        justify-content: center;
+        align-self: center;
+    }
+    background-color: $card-bg-color;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: $border-radius;
+     padding: 20px;
+     box-shadow: 0 10px 30px rgba(0,0,0,.2);
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li{
+            margin: {
+                bottom: $base-margin;
+            }
+            strong{
+                text-align: center;
+                display: inline-block;
+                margin: {
+                    left: max(40px);
+                    top: 15px;
+                }
+            }
+            // check icon
+            span{
+                width: 30px;
+                height: 30px;
+                background-color: $primary-color-light;
+                position: absolute;
+                border-radius: 50%;
+                margin: {
+                    top: 10px;
+                    right: 15px;
+                }
+                // pseudo elementos, sem valor semântico
+                &:before{
+                    content: '\2713';
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

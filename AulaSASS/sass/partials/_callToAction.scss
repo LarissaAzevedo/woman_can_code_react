@@ -1,0 +1,27 @@
+section#primary{
+    text-align: center;
+    color: $color-white;
+    text-align: center;
+    margin: 30px;
+
+    .title{
+        font-size: 50px;
+        text-transform: uppercase;
+    }
+
+    .subtitle{
+        font-size: 30px;
+    }
+
+    .callBtn{
+        border-radius: $border-radius;
+        background-color: $accet-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: $base-padding $base-padding * 2;
+        text-decoration: none;
+        color: black;
+        display: block;
+        margin: 50px auto 0 auto;
+    }
+}

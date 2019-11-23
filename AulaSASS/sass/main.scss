@@ -1,11 +1,13 @@
-$primary-color : #005dff;
-$padding : 13px; 
-
-@import 'partials/header';
-@import 'partials/reset';
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import 'partials/variables';
+@import '../sass/mixins.scss';
+@import 'partials/reset';
+@import 'partials/base';
+@import 'partials/header';
 @import 'partials/bg';
-@import 'partials/callToAction';
 @import 'partials/choices';
+@import 'partials/callToAction';
 
+
+// a ordem dos imports é importante, variables e reset são usados pelos outros arquivos
 
