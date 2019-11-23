@@ -46,10 +46,3 @@ function cliqueFora(event){
         cModal.classList.remove('modalOn')
     }, 1000);
 }
-
-
-
-
-
-
-
